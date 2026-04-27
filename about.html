@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Book Haven Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="brand-group">
+            <img src="images/storelogo.png" alt="Book Haven Logo" class="logo">
+            <div class="title-text">
+                <h1 class="site-title">BOOK HAVEN</h1>
+                <p class="site-subtitle">BOOKSTORE</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="gallery.html" >Gallery</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-utilities">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </div>
+</header>
+
+<main class="about-page">
+    <h1 class="main-heading">About Us: The Book Haven Story</h1>
+
+    <section class="story-container">
+        <div class="story-image">
+            <div class="image-frame">
+                <img src="images/hansens.jpg" alt="Mark and Sarah Hansen">
+            </div>
+            <p class="caption">Mark and Sarah Hansen</p>
+        </div>
+        
+        <div class="story-text">
+            <h2>Our Story</h2>
+            <p>We started Book Haven to be a "home away from home" for readers of all kinds. Whether you’re looking for a rare academic text to help with a project or a cozy mystery to get lost in on a rainy Sunday, we wanted to build a place where you could find it.</p>
+        </div>
+    </section>
+
+    <section class="mission-banner">
+        <div class="mission-content">
+            <h2>Our Mission:</h2>
+            <p>At Book Haven Bookstore, our mission is to provide a quiet, curated sanctuary for the curious mind. We believe that every book is a doorway to a new perspective, and we are committed to building a community where knowledge is accessible and stories are celebrated.</p>
+        </div>
+    </section>
+
+    <section class="contact-form-section">
+        <h2>Send us a Message</h2>
+        <form id="contact-form">
+            <input type="text" id="user-name" placeholder="Your Name" required>
+            <input type="email" id="user-email" placeholder="Your Email" required>
+            <textarea id="user-message" placeholder="How can we help you?" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="form-feedback"></div>
+    </section>
+</main>
+
+<footer class="contact-footer">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><i class="fa-solid fa-envelope"></i> Bookhaven@contact.com</p>
+        <p><i class="fa-solid fa-phone"></i> 245-000-0930</p>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>

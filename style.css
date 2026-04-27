@@ -1,0 +1,605 @@
+:root {
+    --midnight: #2E2E4E;
+    --romantic-red: #742C36;
+    --regal-purple: #5C2E5C;
+    --off-white: #C1CFD6;
+}
+
+body {
+    background-color: var(--midnight);
+    color: var(--off-white);
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+ /* HEADER & NAVIGATION */
+
+header {
+    background-color: #742C36;
+    padding: 0 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.site-title {
+    color: white;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    font-size: 22px;
+    line-height: 1;
+}
+
+.site-subtitle {
+    color: #C1CFD6;
+    font-size: 10px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Times New Roman', serif;
+    font-size: 16px;
+}
+
+.header-utilities {
+    display: flex;
+    gap: 20px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.header-utilities i {
+    cursor: pointer;
+}
+
+/* HERO & BOOK CARDS */
+
+.hero {
+    text-align: center;
+}
+
+.main-hero-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.hero-content {
+    padding: 40px 20px;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.book-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    border: 2px solid #5C2E5C;
+    background-color: transparent;
+    text-align: center;
+}
+
+.book-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.book-card h3 {
+    color: white;
+    font-family: 'Times New Roman', serif;
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+    min-height: 3.5em; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.book-card .price {
+    color: #C1CFD6;
+    font-weight: bold;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+#eat-image {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 10px solid #5C2E5C; 
+}
+
+/* GALLERY PAGE */
+
+.gallery-page {
+    background-color: #2E2E4E;
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.page-title {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 60px 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.collection-card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.collection-card h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 1.5rem;
+    margin: 10px 0 5px 0;
+}
+
+.collection-card p {
+    font-size: 0.8rem;
+    color: #C1CFD6;
+    margin-bottom: 15px;
+}
+
+.image-frame {
+    border: 4px solid #5C2E5C;
+    padding: 15px; 
+    margin-bottom: 20px;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.image-frame img {
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.view-btn {
+    display: inline-block;
+    background-color: #5C2E5C;
+    color: white;
+    text-decoration: none;
+    padding: 8px 35px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: 0.3s;
+}
+
+.view-btn:hover {
+    background-color: white;
+    color: #5C2E5C;
+}
+
+.view-all-btn {
+    display: inline-block;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    padding: 12px 60px;
+    border-radius: 30px;
+    background-color: #5C2E5C;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.view-all-btn:hover {
+    transform: scale(1.05);
+}
+
+/* ABOUT PAGE */
+
+.about-page {
+    background-color: #2E2E4E;
+    color: white;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.main-heading {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.mission-banner {
+    background-color: #742C36;
+    width: 100%;
+    padding: 60px 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.mission-content h2 {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.mission-content p {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.story-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 0 auto 80px auto;
+    text-align: left;
+}
+
+.story-text {
+    max-width: 400px;
+}
+
+.story-text h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.story-text p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #C1CFD6;
+    margin-top: 10px;
+}
+
+/* SHOP PAGE */
+.shop-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #7B6B8D; 
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    display: block;
+}
+
+.categories li {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.categories li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+}
+
+.active-cat {
+    background-color: #B298C1;
+    border-radius: 5px;
+}
+
+.product-area {
+    flex-grow: 1;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #7B6B8D;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.image-placeholder {
+    background-color: #9C8EB2;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.cart-btn {
+    background-color: #5C2E5C;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+input[type="text"], .search-input { 
+    box-sizing: border-box; 
+    width: 100%; 
+    max-width: 220px; 
+    background-color: rgba(108, 92, 124, 0.8);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+    display: block;
+    margin: 0 auto;
+}
+
+.search-bar input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* FOOTER & NEWSLETTER */
+footer {
+    background-color: var(--romantic-red);
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+.subscribe-section {
+    padding: 20px;
+}
+
+#email-sub {
+    background-color: rgba(108, 92, 124, 0.6);
+    border: none;
+    border-radius: 50px;
+    padding: 12px 25px;
+    color: white;
+    outline: none;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+#email-sub::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sub-input input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+#sub-btn {
+    background-color: var(--regal-purple);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.contact-footer {
+    background-color: #2E2E4E;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.contact-footer h2 {
+    font-family: 'Times New Roman', serif;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.contact-details p {
+    justify-content: center;
+    gap: 15px;
+}
+
+.contact-details i {
+    font-size: 1.4rem;
+}
+
+.contact-footer-gallery {
+    background-color: #742C36;
+    padding: 80px 40px;
+    text-align: center;
+}
+
+/* MODAL (Pop-up images)*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    margin-top: 5%;
+    border: 3px solid #b7a6c4;
+    border-radius: 10px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-modal:hover {
+    color: #b7a6c4;
+}
+
+/* CONTACT FORM STYLING */
+.contact-form-section {
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: rgba(92, 46, 92, 0.1); /* Subtle Regal Purple tint */
+    border-radius: 15px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-form-section h2 {
+    text-align: center;
+    color: #C1CFD6; /* Off-White */
+    margin-bottom: 25px;
+    font-family: 'Times New Roman', serif;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contact-form input, 
+#contact-form textarea {
+    width: 100%; /* Ensures it fills the container */
+    box-sizing: border-box; /* Crucial: includes padding in the width calculation */
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px solid #5C2E5C; /* Regal Purple */
+    background-color: #ffffff;
+    font-size: 16px; /* Prevents iOS/mobile zooming when clicking */
+    font-family: Arial, sans-serif;
+    color: #333; /* Makes sure the text you type is dark and visible */
+}
+
+/* Specific fix for the 'Your Name' box to ensure it's not too short */
+#contact-form input {
+    height: 50px; 
+}
+#contact-form input:focus, 
+#contact-form textarea:focus {
+    outline: 2px solid #742C36; /* Romantic Red highlight when clicking */
+    background-color: #fff;
+}
+
+#contact-form button {
+    cursor: pointer;
+    align-self: center;
+    padding: 12px 40px;
+    background-color: #742C36; /* Romantic Red */
+    color: white;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+#contact-form button:hover {
+    background-color: #5C2E5C; /* Changes to Regal Purple on hover */
+}
+
+#form-feedback {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #C1CFD6;
+}

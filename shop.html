@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop | Book Haven Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="brand-group">
+            <img src="images/storelogo.png" alt="Book Haven Logo" class="logo">
+            <div class="title-text">
+                <h1 class="site-title">BOOK HAVEN</h1>
+                <p class="site-subtitle">BOOKSTORE</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html" class="active">Shop</a></li>
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> Cart</a></li>
+            </ul>
+        </nav>
+        <div class="header-utilities">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </div>
+</header>
+
+<main class="shop-page">
+    <h1 class="shop-title">Shop Our Collections and Merchandise</h1>
+
+    <div class="shop-container">
+        <aside class="sidebar">
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+            </div>
+            <nav class="categories">
+                <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Fiction</a></li>
+                    <li><a href="#">Non-Fiction</a></li>
+                    <li><a href="#">Sci-Fi</a></li>
+                    <li><a href="#">Romance</a></li>
+                    <li><a href="#">Mystery / Thriller</a></li>
+                    <li><a href="#">Children's</a></li>
+                    <li class="active-cat"><a href="#">Featured & Merchandise</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <section class="product-area">
+            <h2 class="section-subtitle">Featured & Merchandise</h2>
+            
+            <div class="product-grid">
+                <article class="product-card">
+                    <div class="product-image-frame">
+                        <img src="images/read-read-read.png" alt="READ Tote">
+                    </div>
+                    <h3 class="product-name">READ Tote</h3> <p class="product-price">$15.00</p>    <button type="button" class="cart-btn">Add to cart</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-frame">
+                        <img src="images/BH-notebook.png" alt="BH Notebook">
+                    </div>
+                    <h3 class="product-name">BH Notebook</h3> <p class="product-price">$10.00</p>    <button type="button" class="cart-btn">Add to cart</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-frame">
+                        <img src="images/Travel-mag.png" alt="Travel Mag 26">
+                    </div>
+                    <h3 class="product-name">Travel Mag 26</h3> <p class="product-price">$20.00</p>    <button type="button" class="cart-btn">Add to cart</button>
+                </article>
+
+                <article class="product-card">
+                    <div class="product-image-frame">
+                        <img src="images/eat-for-foodies.png" alt="Eat for Foodies">
+                    </div>
+                    <h3 class="product-name">Eat for Foodies</h3> <p class="product-price">$25.00</p>    <button type="button" class="cart-btn">Add to cart</button>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>

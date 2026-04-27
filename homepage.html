@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Book Haven Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="brand-group">
+                <img src="images/storelogo.png" alt="Book Haven Logo" class="logo">
+                <div class="title-text">
+                    <h1 class="site-title">BOOK HAVEN</h1>
+                    <p class="site-subtitle">BOOKSTORE</p>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="homepage.html" class="active">Home</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-utilities">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <main>
+    <section class="hero">
+        <div class="hero-image-container">
+            <img src="images/libraryfront.jpg" alt="Inside Book Haven Bookstore" class="main-hero-img">
+        </div>
+        
+        <div class="hero-content">
+            <h2>Discover your next chapter today!</h2>
+            <p>Browse our featured selections below</p>
+        </div>
+    </section>
+            
+        <section class="book-grid">
+            <article class="book-card">
+                <img src="images/briemine.png" alt="Brie Mine 4Ever">
+                <h3>Brie Mine 4Ever</h3>
+                <p>$21.99</p>
+            </article>
+
+            <article class="book-card">
+                <img src="images/griders.png" alt="Glory Riders">
+                <h3>Glory Riders</h3>
+                <p>$18.50</p>
+            </article>
+
+            <article class="book-card">
+                <img src="images/sorcerersbook.png" alt="Sorcerer's Shadowed Chronicles">
+                <h3>Sorcerer's Shadowed Chronicles</h3>
+                <p>$24.00</p>
+            </article>
+
+            <article class="book-card">
+                <img src="images/eatbook.png" alt="Eat Cookbook" id="eat-image">
+                <h3>Eat! Cookbook</h3>
+                <p>$19.99</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="contact-info">
+                <p>Bookhaven@contact.com</p>
+                <p>245-000-6530</p>
+            </div>
+        </div>
+            
+        <div class="subscribe-section">
+            <label for="email-sub">Subscribe to our Newsletter:</label>
+            <div class="sub-input">
+                <input type="email" id="email-sub" placeholder="Email Address">
+                <button type="button" id="sub-btn">Subscribe</button>
+            </div>
+            <span id="sub-message" style="display: block; margin-top: 10px;"></span>
+        </div>
+
+        <nav class="footer-nav">
+            <a href="homepage.html">Home</a> | 
+            <a href="gallery.html">Gallery</a> | 
+            <a href="about.html">About Us</a> | 
+            <a href="shop.html">Shop</a>
+        </nav>
+
+        <p class="copyright">&copy; 2026 Book Haven Bookstore</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>

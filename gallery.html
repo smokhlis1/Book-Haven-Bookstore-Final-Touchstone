@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Book Haven Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<header>
+    <div class="header-container">
+        <div class="brand-group">
+            <img src="images/storelogo.png" alt="Book Haven Logo" class="logo">
+            <div class="title-text">
+                <h1 class="site-title">BOOK HAVEN</h1>
+                <p class="site-subtitle">BOOKSTORE</p>
+            </div>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="shop.html">Shop</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-utilities">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </div>
+</header>
+
+<main class="gallery-page">
+    <h1 class="page-title">Photo Collections</h1>
+
+    <section class="gallery-grid">
+        <article class="collection-card">
+            <div class="image-frame">
+                <img src="images/authorevents.jpg" alt="Author Events">
+            </div>
+            <h3>Author Events</h3>
+            <p>View author event photos!</p>
+            <a href="#" class="view-btn">VIEW</a>
+        </article>
+
+        <article class="collection-card">
+            <div class="image-frame">
+                <img src="images/bookclub.jpg" alt="Book Club">
+            </div>
+            <h3>Book Club</h3>
+            <p>View book club photos!</p>
+            <a href="#" class="view-btn">VIEW</a>
+        </article>
+
+        <article class="collection-card">
+            <div class="image-frame">
+                <img src="images/rarecollection.jpg" alt="Rare Collection">
+            </div>
+            <h3>Rare Collection</h3>
+            <p>View photos of our rarest book collection!</p>
+            <a href="#" class="view-btn">VIEW</a>
+        </article>
+
+        <article class="collection-card">
+            <div class="image-frame">
+                <img src="images/charityevents.jpg" alt="Charity Events">
+            </div>
+            <h3>Charity Events</h3>
+            <p>View photos from our yearly charity gala!</p>
+            <a href="#" class="view-btn">VIEW</a>
+        </article>
+    </section>
+
+    <div class="gallery-footer">
+        <a href="#" class="view-all-btn">VIEW ALL PHOTOS HERE!</a>
+    </div>
+</main>
+
+<footer class="contact-footer-gallery">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><i class="fa-solid fa-envelope"></i> Bookhaven@contact.com</p>
+        <p><i class="fa-solid fa-phone"></i> 245-000-0930</p>
+    </div>
+</footer>
+
+<div id="imageModal" class="modal">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="imgFull">
+    <div id="caption"></div>
+</div>
+<script src="script.js"></script>
